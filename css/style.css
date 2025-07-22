@@ -1,0 +1,489 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'ONE-Mobile-Title';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ONE-Mobile-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* reset */
+*{margin:0;padding:0;}
+a{text-decoration: none;color:#222222;}
+ul{list-style: none;}
+body{
+	font-size:87.5%; /*14px*/
+	line-height:150%;
+	font-family:'ONE-Mobile-Regular','나눔고딕','돋움',arial,sans-serif;
+	color:#222;
+}
+
+/* header */
+header{
+    width:100%;height:150px;
+    position:fixed;top:0;left:0;
+    z-index: 1000;
+}
+#logo{ /* 로고 */
+    display:none;
+    width:200px;
+    height:50px;
+    padding-left:260px;
+    box-sizing: border-box;
+    line-height: 200px;
+    font-weight: normal;
+}
+#logo>img{
+    width:200px;
+    height:50px;
+}
+#menu{
+    width:1000px;
+    height:50px;
+    position:absolute;top:60px;right:260px;
+}
+#menu>li{
+    float:left;
+    width:250px;height:50px;
+    line-height: 50px;
+    text-align: center;
+}
+#menu>li>a{
+    font-family: 'ONE-Mobile-Title';
+    font-size:20px;
+    color:#ffffff;
+    display:block;
+}
+#menu>li>a:hover{background-color: #f0bf7d;}
+
+/* main */
+#main{
+    width:100%;height:1000px;
+}
+#background{
+    width:100%;height:100%;
+    position:relative;
+}
+#background>h2{
+    text-align: center;
+    position:relative;
+    top:-615px;
+    animation:fadein2 1.5s ease-in;
+}
+@keyframes fadein2{
+    0%{opacity:0;}
+    100%{opacity: 1;}
+}
+#background>h2>img{
+    width:760px;height:227px;
+}
+#background>div{float:left;}
+.patternB{
+    width:50%;height:100%;
+    background:url(../images/pattern.jpg);
+}
+.singleB{
+    width:50%;height:100%;
+    background-color: #002e48;
+}
+
+/* about me */
+#aboutme{
+    /* width:1400px;height:1031px; */
+    margin:auto;
+    padding-top:200px;
+}
+.about_top{ /* aboutme 상단 */
+    width:1400px;
+    height:451px;
+    margin: 0 auto;
+}
+.about_top>p:first-of-type{ /* 증명사진 */
+    width:611px;height:451px;
+    text-align: center;
+}
+.about_top>p>img{
+    padding-top:63px;
+}
+.about_top>p{float:left;}
+.about_top>p:last-of-type{ /* 증명사진 옆 글 */
+    font-family: 'ONE-Mobile-Title';
+    font-size:30px;
+    font-style: italic;
+    line-height: 83px;
+    text-align: center;
+    margin-top:100px;
+    padding-left:99px;
+    color:#000000;
+    font-weight: normal;
+    animation:textAni 1.5s infinite;
+}
+@keyframes textAni{
+    0%{margin-top:100px;}
+    20%{margin-top:110px;}
+    40%{margin-top:100px;}
+    60%{margin-top:110px;}
+    80%{margin-top:100px;}
+    100%{margin-top:100px;}
+}
+.about_top span{
+    color:#f0bf7d;
+    font-size:35px;
+}
+.about_btm{ /* aboutme 하단 */
+    clear: both;
+    height:500px;
+    width:100%;
+    background-color: #e7eeee;
+}
+.about_btm>div{
+    width:1400px;
+    height:500px;
+    margin:0 auto;
+}
+.about_btm>div>h2{
+    font-size:40px;
+    color:#263842;
+    line-height:150px;
+    text-align: center;
+    font-family: 'ONE-Mobile-Title';
+}
+.about_btm>div>div{ /* 생년월일 /보유스킬 반반 */
+    float:left;
+    width:700px;
+    height:350px;
+}
+.mystory{
+    padding-left:30px;
+    box-sizing: border-box;
+}
+.mystory>ul{
+    width:431px;
+    height:195px;
+}
+.mystory>ul>li{
+    line-height: 48px;
+    color:#222222;
+    font-family: 'ONE-Mobile-Title';
+    font-size: 20px;
+}
+.mystory>ul>li>span{
+    padding-left:25px;
+    box-sizing: border-box;
+    font-size:18px;
+    font-family: 'ONE-Mobile-Regular';
+}
+.skill>h3{
+    font-family: 'ONE-Mobile-Title';
+    font-size:20px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom:30px;
+}
+.skill>ul{
+    margin-left:164px;
+    width:400px;
+    height:100px;
+}
+.skill>ul>li{
+    float:left;
+    width:100px;
+    height:100%;
+    text-align: center;
+}
+.skill>ul>li>p{
+    font-size:14px;
+    font-family: 'ONE-Mobile-Regular';
+    color:#222222;
+}
+.skill>div{ /* 보유스킬 밑 긴글 */
+    font-size:16px;
+    font-family: 'ONE-Mobile-Regular';
+    color:#222222;
+    text-align: left;
+    padding-left: 71px;
+}
+
+/* web portfolio */
+#web_pf{
+    padding-top:200px;
+    margin-top:100px;
+    width:100%;
+    height:750px;
+    position:relative;
+}
+#web_pf>h2{
+    width:100%;
+    height:300px;
+    background-color: #263842;
+    text-align: center;
+    color:#ffffff;
+    font-family: 'ONE-Mobile-Title';
+    font-size:40px;
+    line-height: 150px;
+    font-weight: normal;
+}
+#left_btn{
+    position:absolute;
+    top:626px;left:195px;
+}
+#right_btn{
+    position:absolute;
+    top:626px;right:195px;
+}
+.Intro{ /* 포폴 소개 */
+    width:1400px;
+    height:600px;
+    background-color: #eeeeee;
+    margin:0 auto;
+    position:relative;top:-150px;
+    z-index:100;
+}
+.Intro>div{
+    width:100%;
+    height:100%;
+    position:absolute;top:0;left:0;
+    padding:0 30px 30px 30px;
+    box-sizing: border-box;
+}
+.Intro h3{ /* 공통 작성 */
+    line-height: 100px;
+    color:#222222;
+    font-family: 'ONE-Mobile-Title';
+    font-size:25px;
+    font-weight: normal;
+}
+.color{
+    width:140px;
+    margin-bottom:50px;
+}
+.color>div{ /* color */
+    float:left;
+}
+.Intro h4{
+    clear:both;
+    font-size:17px;
+    font-family: 'ONE-Mobile-Regular';
+    color:#222222;
+    font-weight: bold;
+    line-height:32px;
+}
+.Intro p{
+    font-size:16px;
+    font-family: 'ONE-Mobile-Regular';
+    color:#222222;
+    margin-bottom:30px;
+}
+.Intro a{ /* 공통- 사이트 바로가기 */
+    width:200px;
+    height:40px;
+    background-color: #55758a;
+    display:block;
+    color:#ffffff;
+    font-size:16px;
+    text-align: center;
+    line-height: 40px;
+    position:absolute;bottom:30px;left:30px;
+}
+.pf1{position:relative;}
+.pf1>.color>div:first-of-type{ /* 1-뮤흐뮤흐 */
+    background-color: #fcdce7;
+    width:30px;
+    height:30px;
+    border-radius: 15px;
+}
+.pf1>.color>div:nth-of-type(2){
+    background-color: #e83886;
+    width:30px;
+    height:30px;
+    border-radius: 15px;
+    margin: 0 25px;
+}
+.pf1>.color>div:last-of-type{
+    background-color: #777777;
+    width:30px;
+    height:30px;
+    border-radius: 15px;
+}
+.pf1>img{
+    position:absolute;
+    top:100px;right:65px;
+}
+.pf2>.color>div:first-of-type{ /* 2-크리스피크림-피씨*/
+    background-color: #006e49;
+    width:30px;
+    height:30px;
+    border-radius: 15px;
+}
+.pf2>.color>div:nth-of-type(2){
+    background-color: #cd0a3f;
+    width:30px;
+    height:30px;
+    border-radius: 15px;
+    margin: 0 25px;
+}
+.pf2>img{
+    position:absolute;
+    top:100px;right:65px;
+}
+.pf3>.color>div:first-of-type{ /* 2-크리스피크림-모바일*/
+    background-color: #006e49;
+    width:30px;
+    height:30px;
+    border-radius: 15px;
+}
+.pf3>.color>div:nth-of-type(2){
+    background-color: #cd0a3f;
+    width:30px;
+    height:30px;
+    border-radius: 15px;
+    margin: 0 25px;
+}
+.pf3>img{
+    position:absolute;
+    top:100px;right:250px;
+}
+.pf4>.color>div:first-of-type{ /* 4-반응형웹효성 */
+    background-color: #0241a8;
+    width:30px;
+    height:30px;
+    border-radius: 15px;
+}
+.pf4>.color>div:nth-of-type(2){
+    background-color: #777777;
+    width:30px;
+    height:30px;
+    border-radius: 15px;
+    margin: 0 25px;
+}
+.pf4>.color>div:last-of-type{
+    background-color: #ffffff;
+    width:30px;
+    height:30px;
+    border-radius: 15px;
+}
+.pf4>img{
+    position:absolute;
+    top:100px;right:65px;
+}
+/* .pf1{display:none;} */
+.pf2{display: none;}
+.pf3{display: none;}
+.pf4{display: none;}
+
+/* design portfolio */
+#design_pf{
+    padding-top:200px;
+    margin-top:100px;
+    width:100%;
+    height:1000px;
+    background-color: #263842;
+}
+#design_pf>div{
+    width:1400px;
+    margin: 0 auto;
+}
+#design_pf>div>h3{
+    line-height: 152px;
+    color:#ffffff;
+    font-family: 'ONE-Mobile-Title';
+    font-size:20px;
+    padding-left: 30px;
+    font-weight: normal;
+}
+#design_pf>div>ul{
+    width:1400px;
+    height:615px;
+}
+#design_pf>div>ul>li{
+    margin-right:10px;
+}
+#design_pf>div>ul>li:last-child{
+    margin-right:0;
+}
+#design_pf>div>ul>li:nth-child(1),
+#design_pf>div>ul>li:nth-child(2),
+#design_pf>div>ul>li:nth-child(3){
+    float:left;
+}
+#design_pf>div>ul>li:nth-child(4){
+    clear: both;
+}
+#design_pf>div>ul>li:nth-child(4),
+#design_pf>div>ul>li:nth-child(5),
+#design_pf>div>ul>li:nth-child(6),
+#design_pf>div>ul>li:nth-child(7){
+    float:left;
+}
+
+/* contact me */
+#contactme{
+    padding-top:200px;
+    margin-top:100px;
+    width:100%;
+    height:550px;
+}
+#contactme>h4{
+    /* width:800px; */
+    width:41.6666667%;
+    height:100px;
+    background-color: #f0bf7d;
+    color:#222222;
+    font-size:35px;
+    font-family: 'ONE-Mobile-Title';
+    text-align: center;
+    line-height: 100px;
+    font-weight: normal;
+    /* animation: sizeUp 2s ease-out; */
+}
+/* @keyframes sizeUp{
+    0%{width:0;font-size:1px;}
+    100%{width:41.6666667%;font-size:35px;}
+} */
+#contactme>div{
+    width:62.5%;
+    height:500px;
+    background-color: #eeeeee;
+    position:relative;
+    top:-50px;
+    /* left:37.5520833%; */
+    left:37.5%;
+    padding-left:7.8125%;
+    box-sizing: border-box;
+    /* animation:fadein 1.5s ease-in; */
+}
+/* @keyframes fadein{
+    from{opacity:0;}
+    to{opacity:1;}
+} */
+#contactme h5{
+    color:#222222;
+    font-size:25px;
+    font-family: 'ONE-Mobile-Title';
+    font-weight: normal;
+    line-height: 118px;
+    padding-top:144px;
+}
+#contactme span{
+    color:#777777;
+    font-size:20px;
+}
+#contactme p{
+    color:#222222;
+    font-size:18px;
+    font-family: 'ONE-Mobile-Regular';
+    line-height:30px;
+}
+
+/* 패턴 하단 배경 */
+#bottom{
+    margin-top:100px;
+    width:100%;
+    height:100px;
+    background:url(../images/pattern.jpg);
+}
